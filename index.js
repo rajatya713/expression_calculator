@@ -47,6 +47,9 @@ function InfixToPostfix(express) {
         }
         else if (element == ')')
         {
+            if (!S.includes('(')) {
+                return "error!";
+            }
 
             while (!S.length == 0 && S.at(-1) != '(')
             {
