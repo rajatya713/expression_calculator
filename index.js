@@ -20,7 +20,7 @@ function calculate_total() {
     expression = op.textContent;
     let postfix_value = InfixToPostfix(expression);
    
-    let postfix_eval_value = evalPostfix(postfix_value);
+    let postfix_eval_value = evalPostfix(postfix_value.trim());
     op.textContent = postfix_eval_value;
 
 
@@ -50,6 +50,7 @@ function InfixToPostfix(express) {
             if (!S.includes('(')) {
                 return "error!";
             }
+            
 
             while (!S.length == 0 && S.at(-1) != '(')
             {
@@ -184,13 +185,20 @@ function HasHigherPrecedence(op1, op2)
 //Postfix Evaluation:
 function eval(lhs, rhs, op)
 {
-    switch (op) {
-        case '+': return lhs + rhs;
-        case '-': return lhs - rhs;
-        case '*': return lhs * rhs;
+    switch (op)
+    {
+        case '+':
+            return lhs + rhs;
+
+        case '-':
+            return lhs - rhs;
+        case '*':
+            return lhs * rhs;
         case '/':
             if (rhs !== 0)
+            {
                 return lhs / rhs;
+            }
             return "Can't Divide by 0";
     }
 
@@ -199,6 +207,7 @@ function eval(lhs, rhs, op)
 
 function evalPostfix(input) {
     let values = [];
+
     let ss = input.split(' ');
 
     while (ss.length > 0)
@@ -207,9 +216,11 @@ function evalPostfix(input) {
         if (!isNaN(parseFloat(token)))
         {
             values.push(parseFloat(token));
-        } else {
+        }
+        else
+        {
             let op = token;
-            if (!['+', '-', '*', '/'].includes(op))
+            if (!(op == '+' || op === '-' || op === '*' || op === '/'))
             {                                         //not a valid operator
                 return "error!";
             }
