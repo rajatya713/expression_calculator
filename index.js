@@ -140,7 +140,7 @@ function IsOperand(c)
 function IsOperator(op)
 {
 
-    if (op === '+' || op === '-' || op === '*' || op === '/')
+    if (op === '+' || op === '-' || op === '×' || op === '÷')
     {
         return true;
     }
@@ -158,10 +158,10 @@ function GetOperatorWeightage(char)
         case '-':
             weight = 1;
             break;
-        case '*':
+        case '×':
             weight = 2;
             break;
-        case '/':
+        case '÷':
             weight = 2;
             break;
 
@@ -185,16 +185,17 @@ function HasHigherPrecedence(op1, op2)
 //Postfix Evaluation:
 function eval(lhs, rhs, op)
 {
-    switch (op)
-    {
+    const p = 1e10;
+    switch (op) {
+
         case '+':
-            return lhs + rhs;
+            return ((lhs * p + rhs * p) / p);
 
         case '-':
-            return lhs - rhs;
-        case '*':
-            return lhs * rhs;
-        case '/':
+            return ((lhs * p - rhs * p) / p);
+        case '×':
+            return (lhs * p * rhs * p) / (p * p);
+        case '÷':
             if (rhs !== 0)
             {
                 return lhs / rhs;
@@ -220,7 +221,7 @@ function evalPostfix(input) {
         else
         {
             let op = token;
-            if (!(op == '+' || op === '-' || op === '*' || op === '/'))
+            if (!(op == '+' || op === '-' || op === '×' || op === '÷'))
             {                                         //not a valid operator
                 return "error!";
             }

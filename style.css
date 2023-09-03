@@ -1,106 +1,125 @@
-body{
+body {
     text-align: center;
-    color:white;
-    background-color:color-mix(in srgb-linear, blue 20%, white  10%);
-}
-h1{
-    text-shadow: 0 0 1px  black;
-    color:rgb(155, 107, 150);
+    color: white;
+    background-color: color-mix(in srgb-linear, blue 20%, white 10%);
 }
 
-.container{
+h1 {
+    text-shadow: 0 0 1px black;
+    color: rgb(155, 107, 150);
+}
 
-   width: 300px;
-   height: 500px;
-   margin:0px  auto;
-    border: 4px dotted rgb(219, 146, 56);
+.container {
+
+    width: 325px;
+    height: 600px;
+    margin: 0px auto;
+    border: 4px double  rgb(204, 177, 143);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:beige;
+    background-color: rgba(253, 251, 254,255);
 }
 
-#output-box{
-    margin: 2px 0px 30px 0px;
-    height:40px;
-    width:200px;
+#output-box {
+    margin: 2px 5px 30px 0px;
+    height: 50px;
+    width: 220px;
     padding-top: 10px;
-    border:2px solid lightslategray;
-    background-color:rgb(226, 219, 219);
-    overflow-y:scroll;
-    color:black;
+    border: 2px solid lightslategray;
+    background-color: white;
+    overflow-y: scroll;
+    color: black;
     font-weight: bold;
     font-size: large;
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
 }
 
-button{
-    width:60px;
-    height:50px;
-    margin:4px 2px;
+button {
+    border-radius: 30px;
+    width: 65px;
+    height: 60px;
+    margin: 4px 2px;
     font-size: large;
     font-weight: bold;
+    border:none;
 }
-.display{
-    display:inline-flex;
+
+.display {
+    display: inline-flex;
     margin: 30px auto 5px;
 }
-#parentheses{
-    background-color: aqua;
-    border:2px solid rgb(28, 123, 163);
-}
-#back-button{
-    background-color:red;
-    border:2px solid rgb(155, 10, 10);
-}
-#numbers{
-    background-color: rgb(199, 103, 34);
-    border:2px solid rgb(246, 47, 2);
-}
-#numbers0{
-    background-color: aquamarine;
-    border:2px solid rgb(17, 215, 149);
-}
-#point{
-    background-color:rgb(50,134,207);
-    border:2px solid rgb(77, 119, 156);
-}
-#operator-button{
-    background-color: rgb(49, 209, 31);
-    border: 2px solid rgb(78, 168, 45);
-}
-#equalto{
-    background-color:gold;
-    border:2px solid #daa520;
+
+#parentheses {
+
+    background-color: rgba(220, 226, 250,255);
+    /* border: 2px solid rgb(78, 168, 45); */
 }
 
-#equalto:hover{
-    background-color:#daa520 ;
-}
-#operator-button:hover{
-    background-color:rgb(78, 168, 45) ;
-}
-#point:hover{
-    background-color: rgb(77, 119, 156);
-}
-#numbers0:hover{
-    background-color: rgb(17, 215, 149);
-}
-#numbers:hover{
-    background-color: rgb(246, 47, 2);
-}
-#back-button:hover{
-    background-color: rgb(155, 10, 10);
-}
-#parentheses:hover{
-    background-color: rgb(28, 123, 163);
+#back-button {
+    background-color: rgba(220, 226, 250, 255);
+    /* border: 2px solid rgb(78, 168, 45); */
 }
 
-#clear-button{
-   border:2px solid rgba(117, 184, 243, 0.546);
+#numbers {
+    background-color: rgba(242, 240,244,255);
+    /* border: 2px solid rgb(246, 47, 2); */
+}
+
+#numbers0 {
+    background-color: rgba(242, 240, 244, 255);
+    /* border: 2px solid rgb(246, 47, 2); */
+}
+
+#point {
+    background-color: rgba(242, 240, 244, 255);
+    /* border: 2px solid rgb(246, 47, 2); */
+}
+
+#operator-button {
+    background-color: rgba(220, 226, 250, 255);
+    /* border: 2px solid rgb(78, 168, 45); */
+}
+
+#equalto {
+    background-color: rgba(70,93,145,255);
+    /* border: 2px solid #daa520; */
+}
+
+#equalto:hover {
+    background-color: rgba(209, 212, 229, 255)
+}
+
+#operator-button:hover {
+    background-color: rgba(191, 197, 219,255);
+}
+
+#point:hover {
+    background-color:rgba(227, 226, 230, 255);
+}
+
+#numbers0:hover {
+    background-color: rgba(227, 226, 230, 255);
+}
+
+#numbers:hover {
+    background-color:rgba(227, 226, 230, 255);
+}
+
+#back-button:hover {
+    background-color: rgba(191, 197, 219, 255);
+}
+
+#parentheses:hover {
+    background-color: rgba(191, 197, 219, 255);
+}
+
+#clear-button {
+    /* border: 2px solid rgba(117, 184, 243, 0.546); */
     background-color: rgba(117, 184, 243, 0.546);
 }
 
-#clear-button:hover{
-    background-color:rgba(88, 153, 210, 0.718) ;
+#clear-button:hover {
+    background-color: rgba(88, 153, 210, 0.718);
 }
