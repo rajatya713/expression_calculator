@@ -185,31 +185,17 @@ function HasHigherPrecedence(op1, op2)
 //Postfix Evaluation:
 function eval(lhs, rhs, op)
 {
-<<<<<<< HEAD
     const p = 1e10;
     switch (op) {
 
-=======
-   const p = 1e10;
-    switch (op)
-    {
-        
->>>>>>> 8104a99354302c67a4a7950c181fc35bde176d74
         case '+':
             return ((lhs * p + rhs * p) / p);
 
         case '-':
-<<<<<<< HEAD
             return ((lhs * p - rhs * p) / p);
         case '×':
             return (lhs * p * rhs * p) / (p * p);
         case '÷':
-=======
-            return ((lhs*p - rhs*p)/p);
-        case '*':
-            return (lhs*p * rhs*p)/(p*p);
-        case '/':
->>>>>>> 8104a99354302c67a4a7950c181fc35bde176d74
             if (rhs !== 0)
             {
                 return lhs / rhs;
