@@ -1,8 +1,25 @@
-let op = document.getElementById("output-box");
+let op = document.querySelector(".output-cont")
 //InfixToPostfix
 let expression = "";
 let S = [];
 let postfix = "";
+
+const button = document.querySelector(".toggle-dark")
+button.addEventListener("click", toggleTheme);
+
+let darkTheme = true;
+
+function toggleTheme(){
+    document.querySelector("body").classList.toggle("light-theme");
+    if(darkTheme){
+        darkTheme = false;
+        button.textContent = "🌚";
+    }
+    else{
+        darkTheme = true;
+        button.textContent = "☀️";
+    }
+}
 
 function calculate(val) {
     if (val === 'C') {
