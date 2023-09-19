@@ -2,8 +2,8 @@
 <html lang="en-US">
     <head>
         <title>Simple Calculator</title>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href="style.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
@@ -20,34 +20,34 @@
                 <button id="clear-button" onclick="calculate('C')" class="clear-all" >C</button>
             </div>
             <div class="row">
-                <button id="parentheses" onclick="calculate('(')">(</button>
-                <button id="parentheses" onclick="calculate(')')">)</button>
-                <button id="back-button" onclick="back()">←</button>
-                <button id="operator-button" onclick="calculate('×')">×</button>
+                <button class="parentheses" onclick="calculate('(')">(</button>
+                <button class="parentheses" onclick="calculate(')')">)</button>
+                <button class="back-button" onclick="back()">←</button>
+                <button class="operator-button" onclick="calculate('×')">×</button>
             </div>
             <div class="row">
-                <button id="numbers" onclick="calculate('7')">7</button>
-                <button id="numbers" onclick="calculate('8')">8</button>
-                <button id="numbers" onclick="calculate('9')">9</button>
-                <button id="operator-button" onclick="calculate('÷')">÷</button>
+                <button class="numbers" onclick="calculate('7')">7</button>
+                <button class="numbers" onclick="calculate('8')">8</button>
+                <button class="numbers" onclick="calculate('9')">9</button>
+                <button class="operator-button" onclick="calculate('÷')">÷</button>
             </div>
             <div class="row">
-                <button id="numbers" onclick="calculate('4')">4</button>
-                <button id="numbers" onclick="calculate('5')">5</button>
-                <button id="numbers" onclick="calculate('6')">6</button>
-                <button id="operator-button" onclick="calculate('-')">–</button>
+                <button class="numbers" onclick="calculate('4')">4</button>
+                <button class="numbers" onclick="calculate('5')">5</button>
+                <button class="numbers" onclick="calculate('6')">6</button>
+                <button class="operator-button" onclick="calculate('-')">–</button>
             </div>
             <div class="row">
-                <button id="numbers" onclick="calculate('1')">1</button>
-                <button id="numbers" onclick="calculate('2')">2</button>
-                <button id="numbers" onclick="calculate('3')">3</button>
-                <button id="operator-button" onclick="calculate('+')">+</button>
+                <button class="numbers" onclick="calculate('1')">1</button>
+                <button class="numbers" onclick="calculate('2')">2</button>
+                <button class="numbers" onclick="calculate('3')">3</button>
+                <button class="operator-button" onclick="calculate('+')">+</button>
             </div>
             <div class="row">
-                <button id="numbers0" onclick="calculate('00')">00</button>
-                <button id="numbers0" onclick="calculate('0')">0</button>
-                <button id="point" onclick="calculate('.')">.</button>
-                <button id="equalto" onclick="calculate_total()">=</button>
+                <button class="numbers0" onclick="calculate('00')">00</button>
+                <button class="numbers0" onclick="calculate('0')">0</button>
+                <button class="point" onclick="calculate('.')">.</button>
+                <button class="equalto" onclick="calculate_total()">=</button>
             </div>
 
         </div>
