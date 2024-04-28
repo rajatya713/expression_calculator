@@ -2,18 +2,18 @@
     transition: all 0.2s;
 }
 
-.light-theme{
-    --bg-color: rgb(232, 236, 224);
-    --font-color: rgb(25, 26, 28);
-    --prim-bg: rgb(178, 172, 152);
-    --sec-bg: rgb(217, 214, 195);
-}
-
-body {
+.dark-theme{
     --bg-color: rgb(40, 35, 45);
     --font-color: rgb(107, 122, 155);
     --prim-bg: rgb(59, 49, 67);
     --sec-bg: rgb(28, 28, 35);
+}
+
+body {
+    --bg-color: rgb(232, 236, 224);
+    --font-color: rgb(25, 26, 28);
+    --prim-bg: rgb(178, 172, 152);
+    --sec-bg: rgb(217, 214, 195);
 
     text-align: center;
     color: var(--font-color);

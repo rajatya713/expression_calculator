@@ -7,10 +7,10 @@ let postfix = "";
 const button = document.querySelector(".toggle-dark")
 button.addEventListener("click", toggleTheme);
 
-let darkTheme = true;
+let darkTheme = false;
 
 function toggleTheme(){
-    document.querySelector("body").classList.toggle("light-theme");
+    document.querySelector("body").classList.toggle("dark-theme");
     if(darkTheme){
         darkTheme = false;
         button.textContent = "🌚";
